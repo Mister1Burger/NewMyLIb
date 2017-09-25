@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
         CurrencyListView currencyListView = (CurrencyListView) findViewById(R.id.currency_list_view);
 
         currencyListView.setAddListener(element -> Log.d("TAG", "add " + element.toString()));
-
         currencyListView.setRemoveListener(element -> Log.d("TAG", "remove " + element.toString()));
+
+
         List list = new ArrayList();
         Element element = new Element();
         element.setInfo("info");

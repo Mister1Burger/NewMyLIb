@@ -87,6 +87,8 @@ public class CurrencyListView extends LinearLayout {
     }
 
     private void remove(Element element) {
+        adapter.getElements().remove(element);
+        adapter.notifyDataSetChanged();
         removeListener.getElement(element);
     }
 
