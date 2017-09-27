@@ -72,22 +72,26 @@ public class CurrencyListView extends LinearLayout {
     }
 
     private void add() {
-        Element element = new Element();
-        element.setName(et_name.getText().toString());
-        element.setInfo(et_info.getText().toString());
-        adapter.addElement(element);
-        addListener.getElement(element);
+        ElementImpl elementImpl = new ElementImpl();
+        elementImpl.setName(et_name.getText().toString());
+        elementImpl.setInfo(et_info.getText().toString());
+        adapter.addElement(elementImpl);
+        addListener.getElement(elementImpl);
 
     }
 
     public void addAll(List<Element> list) {
         for (Element e : list) {
-            adapter.addElement(e);
+            ElementImpl element = new ElementImpl();
+            element.setId(e.getId());
+            element.setInfo(e.getInfo());
+            element.setName(e.getName());
+            adapter.addElement(element);
         }
     }
 
     private void remove(Element element) {
-        adapter.getElements().remove(element);
+        adapter.getElementImpls().remove(element);
         adapter.notifyDataSetChanged();
         removeListener.getElement(element);
     }

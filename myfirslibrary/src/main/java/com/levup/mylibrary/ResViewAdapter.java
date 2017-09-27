@@ -32,16 +32,16 @@ public class ResViewAdapter extends  RecyclerView.Adapter<ResViewAdapter.Element
         }
     }
 
-    List<Element> elements;
+    List<ElementImpl> elementImpls;
     ItemListener listener;
 
-    ResViewAdapter(List<Element> elements, ItemListener listener){
-        this.elements = elements;
+    ResViewAdapter(List<ElementImpl> elementImpls, ItemListener listener){
+        this.elementImpls = elementImpls;
         this.listener = listener;
     }
 
-    public List<Element> getElements() {
-        return elements;
+    public List<ElementImpl> getElementImpls() {
+        return elementImpls;
     }
 
     @Override
@@ -53,25 +53,25 @@ public class ResViewAdapter extends  RecyclerView.Adapter<ResViewAdapter.Element
 
     @Override
     public void onBindViewHolder(ElementViewHolder holder, final int position) {
-        holder.tv_name.setText(elements.get(position).getName());
-        holder.tv_number.setText("" +elements.get(position).getInfo());
+        holder.tv_name.setText(elementImpls.get(position).getName());
+        holder.tv_number.setText("" + elementImpls.get(position).getInfo());
        // holder.iv_symbol.setImageResource(R.drawable.atom);
         holder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.getElement(elements.get(position));
+                listener.getElement(elementImpls.get(position));
             }
         });
     }
 
-    public void addElement(Element element){
-        getElements().add(element);
+    public void addElement(ElementImpl elementImpl){
+        getElementImpls().add(elementImpl);
         notifyDataSetChanged();
     }
 
 
     @Override
     public int getItemCount() {
-        return elements.size();
+        return elementImpls.size();
     }
 }

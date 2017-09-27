@@ -1,1 +1,1 @@
-include ':app', ':myfirslibrary'
+include ':app', ':myfirslibrary', ':myRealmLibrary'

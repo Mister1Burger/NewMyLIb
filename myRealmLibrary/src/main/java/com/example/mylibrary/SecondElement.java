@@ -1,13 +1,11 @@
-package com.levup.mylibrary;
+package com.example.mylibrary;
 
 /**
  * Created by java on 27.09.2017.
  */
 
-public interface Element {
-    long getId() ;
+public interface SecondElement {
 
-    void setId(long id) ;
 
     void setName(String name)  ;
 

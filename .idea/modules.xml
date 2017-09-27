@@ -6,7 +6,11 @@
       <module fileurl="file://$PROJECT_DIR$/RxJavaTest.iml" filepath="$PROJECT_DIR$/RxJavaTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/levelUp-master.iml" filepath="$PROJECT_DIR$/levelUp-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module.iml" filepath="$PROJECT_DIR$/module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myRealmLibrary/myRealmLibrary.iml" filepath="$PROJECT_DIR$/myRealmLibrary/myRealmLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myfirslibrary/myfirslibrary.iml" filepath="$PROJECT_DIR$/myfirslibrary/myfirslibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/myfirslibrary/myfirslibrary.iml" filepath="$PROJECT_DIR$/myfirslibrary/myfirslibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/myfirslibrary/myfirslibrary.iml" filepath="$PROJECT_DIR$/myfirslibrary/myfirslibrary.iml" />
     </modules>
