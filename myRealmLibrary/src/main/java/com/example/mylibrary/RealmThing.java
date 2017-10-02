@@ -42,7 +42,7 @@ public class RealmThing {
     }
 
 
-    public List<SecondElementImpl> readPersons(Context context) {
+    public List<SecondElementImpl> readElement(Context context) {
         Realm realm = init(context);
         File realmFile = new File(context.getFilesDir(), "reminder.realm");
         try {
@@ -57,7 +57,7 @@ public class RealmThing {
         }
     }
 
-    public void saveReminder(Context context, SecondElementImpl secondElement) {
+    public void saveElement(Context context, SecondElementImpl secondElement) {
 
         Realm realm = init(context);
         File realmFile = new File(context.getFilesDir(), "reminder.realm");
@@ -72,7 +72,7 @@ public class RealmThing {
     }
 
 
-    public void removePerson(Context context, String name) {
+    public void removeElement(Context context, String name) {
         Realm realm = init(context);
         File realmFile = new File(context.getFilesDir(), "reminder.realm");
         assert realm != null;

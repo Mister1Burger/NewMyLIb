@@ -20,21 +20,19 @@ public class DataBaseControler {
         SecondElementImpl secondElement1 = new SecondElementImpl();
         secondElement1.setName(secondElement.getName());
         secondElement1.setInfo(secondElement.getInfo());
-        realmThing.saveReminder(context, secondElement1);
+        realmThing.saveElement(context, secondElement1);
 
    }
 
-   public void deleteFromBase (SecondElement secondElement){
+   public void deleteFromBase (String name){
        RealmThing realmThing = new RealmThing();
-       SecondElementImpl secondElement1 = new SecondElementImpl();
-       secondElement1.setName(secondElement.getName());
-       realmThing.removePerson(context, secondElement1.toString());
+       realmThing.removeElement(context, name);
    }
 
-   private List<SecondElement>  readFromBase (){
+   public List<SecondElement>  readFromBase (){
        RealmThing realmThing = new RealmThing();
        List<SecondElement> list = new ArrayList<>();
-       for (SecondElement e:realmThing.readPersons(context)) {
+       for (SecondElement e:realmThing.readElement(context)) {
        SecondElementImpl secondElement = new SecondElementImpl();
            secondElement.setName(e.getName());
            secondElement.setInfo(e.getInfo());
